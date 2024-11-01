@@ -4,6 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Define a fonte da página */
+            background-color: #000000; /* Cor de fundo suave */
+            color: #4c00fc; /* Cor do texto */
+            margin: 0; /* Remove a margem padrão */
+            padding: 20px; /* Adiciona padding ao redor do conteúdo */
+        }
+        
+        h1 {
+            font-size: 2pc; /* Tamanho da fonte do h1 */
+            color: #2600ff; /* Cor do texto do h1 */
+            text-align: center; /* Alinha o texto ao centro */
+            margin-bottom: 20px; /* Espaçamento abaixo do h1 */
+        }
+        
+        p {
+            font-size: 1pc; /* Tamanho da fonte do parágrafo */
+            line-height: 1.6; /* Aumenta o espaçamento entre linhas */
+            margin-bottom: 15px; /* Espaçamento abaixo do parágrafo */
+            max-width: 600px; /* Limita a largura do parágrafo */
+            margin-left: auto; /* Centraliza horizontalmente */
+            margin-right: auto; /* Centraliza horizontalmente */
+        }
+    </style>
 </head>
 <body>
     <h1>Configurações git via VSCode</h1>
@@ -17,6 +42,24 @@
     <b>Passo 4:</b> git config --global user.email "meu email (do github)"
     <br>
     <b>Passo 5:</b> git remote add oriin "https://github.com/nome_do_repositorio_do_github.git"
+    <br>
+    <b>Passo 6:</b> git branch -M master
+    </p>
+    <h1>Upload de arquivos para o github</h1>
+    <p>
+    <b>Passo 1:</b> git add .
+    <br>
+    <b>Passo 2:</b> git commit -m "lembrete de upload"
+    <br>
+    <b>Passo 3:</b> git push --set-upstream origin master (isso só pela primeira vez)
+    <br>
+    <b>Quando for fazer upload depois da primeira vez</b>
+    <br>
+    <b>Passo 4:</b> git add .
+    <br>
+    <b>Passo 5:</b> git commit -m "Comentario"
+    <br>
+    <b>Passo 6:</b> git push
     </p>
     
 </body>
